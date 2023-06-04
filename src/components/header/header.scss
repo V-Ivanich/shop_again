@@ -1,0 +1,177 @@
+.bg-badge {
+  background-color: var(--badge-bg);
+}
+.navbar__container {
+  margin: 6px auto;
+  position: relative;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .menu_nav {
+    display: flex;
+    width: 100%;
+    padding: 0 2px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    background: linear-gradient(rgba(106, 149, 138, 0.07), rgb(96, 171, 201));
+    z-index: 20;
+
+    .nav-links {
+      color: rgb(17, 17, 54);
+      transition: all .3s ease-in-out ;
+
+      &:hover {
+        color: rgba(61, 148, 182, 0.804);
+        transform: translate(0px, -1px);
+      }
+    }
+
+    .wave {
+      position: absolute;
+      top:15px;
+      left: 0px;
+      width: 100%;
+      height: 40px;
+      background: url("../../image/wave.png");
+      background-size: 320px 40px;
+    }
+    .wave1 {
+      animation: animate 30s linear infinite;
+      z-index: -10;
+      opacity: 0.7;
+      animation-delay: 0s;
+      bottom: 0px;
+    }
+    .wave2 {
+      animation: animate2 15s linear infinite;
+      z-index: -11;
+      opacity: 0.5;
+      animation-delay: -5s;
+      bottom: 10px;
+    }
+    .wave3 {
+      animation: animate 30s linear infinite;
+      z-index: -12;
+      opacity: 0.2;
+      animation-delay: -2s;
+      bottom: 15px;
+    }
+    .wave4 {
+      animation: animate2 5s linear infinite;
+      z-index: -13;
+      opacity: 0.6;
+      animation-delay: -5s;
+      bottom: 20px;
+    }
+
+    @keyframes animate {
+      0%
+      {
+        background-position-x: 0px;
+      }
+      100%
+      {
+        background-position-x: 1471px;
+      }
+    }
+    @keyframes animate2 {
+      0%
+      {
+        background-position-x: 0px;
+      }
+      100%
+      {
+        background-position-x: -1471px;
+      }
+    }
+    .icons-box {
+      transition: all .3s ease-in-out ;
+
+      &:hover {
+        transform: translate(0px, -3px);
+
+        &:hover * {
+          fill: rgba(148, 194, 240, 0.804);
+        }
+        
+      }
+    }
+  }
+
+  .navbar__content__pc,
+  .navbar__content__bottom {
+    position: absolute;
+    top: -999px;
+  }
+
+  .catalog {
+    display: flex;
+    height: 53px;
+    background-color: #f0f0f4;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    margin-top: 15px;
+    padding: 0 2px;
+
+    .nav-links {
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        transform: translate(0px, -1px);
+        color:rgba(148, 194, 240, 0.804);
+        text-decoration: underline 3px rgb(68, 202, 204);
+        text-underline-offset: 20px ;
+      }
+
+      &.active {
+        font-weight: 500;
+        color: rgb(37, 16, 104);
+        text-decoration: underline 3px rgb(59, 81, 207);
+        text-underline-offset: 20px ;
+      }
+      }
+    }
+}
+
+@media (min-width: 1024px){
+  .navbar__container {
+    margin-top: 20px;
+    width: 1024px;
+
+    .menu_nav {
+
+      .navbar__content__mobile {
+        position: absolute;
+        top: -999px;
+      }
+
+      .wave {
+        position: absolute;
+        top:10px;
+        left: 0px;
+        width: 100%;
+        height: 70px;
+        background: url("../../image/wave.png");
+        background-size: 1471px 100px;
+      }
+      .navbar__content__pc {
+        position: relative;
+        top: 0;
+        width: 100%;
+      }
+    }
+    .navbar__content__bottom {
+      position: relative;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+}

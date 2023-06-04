@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Big+Shoulders+Inline+Display:wght@200;300&family=Dosis:wght@300;400;500;600&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+:root{
+/* colors */
+  --prymary-bg:#E5E5E5;
+  --accent: #1C62CD;
+  --base: #F0F0F4;
+  --main-text: #2F3035;
+  --text-secondary: #C4C4C4;
+  --badge-bg: rgba(185, 232, 236, 0.806);
+  --shadow: 3px 3px 20px 0px #32323240;
+
+    /* typography */
+  --family: 'Dosis', sans-serif;
+  --fs-base: 18px;
+  --weight-minibold: 400;
+  --weight-normal: 300;
+  --weight-normalbold: 500;
+  --weight-bold: 600;
+
+    /* border */
+  --radii: 1rem;
+  --radii-full: 50%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--family);
+
+  a {
+    text-decoration: none;
+    color: var(--main-text);
+  }
+}
+
+// header {
+//   background-color: black;
+//   padding: 2rem 0;
+//   text-align: center;
+// }
+
+// footer {
+//   background-color: burlywood;
+//   text-align: center;
+// }
+
+// .container {
+//   max-width: 900px;
+//   padding-left: 2rem;
+//   padding-right: 2rem;
+//   margin: 0 auto;
+// }

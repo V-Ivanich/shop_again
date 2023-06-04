@@ -1,0 +1,38 @@
+[
+    {
+        "id": "67rdca3eeb7f6fgeed471815",
+        "name": "Джон Дориан",
+        "email": "Jony7351@tw.com",
+        "password": "b2C!9bmE",
+        "address": "г.Мастеров ул.Славная д.45",
+        "buy":[
+          "acc04",
+          "acc05",
+          "gid05"
+        ],
+        "totalScore": 437900
+    },
+    {
+        "id": "67rdca3eeb7f6fgeed471816",
+        "name": "Кокс",
+        "email": "white4571@twipet.com",
+        "password": "NSF-kQ7p",
+        "address": "г.Великие-Превеликие пр.Светлый д.10 к.2",
+        "buy":[
+          "eng03",
+          "acc06"
+        ],
+        "totalScore": 178800
+    },
+    {
+        "id": "67rdca3eeb7f6fgeed471817",
+        "name": "Боб Келсо",
+        "email": "bob007@tw.com",
+        "password": "*cr6Lydn",
+        "address": "г.Рогов ул.Кривая д.13",
+        "buy":[
+          "gid07"
+        ],
+        "totalScore": 29901
+    }
+]

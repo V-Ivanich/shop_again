@@ -1,0 +1,78 @@
+[
+  {
+    "id": "acc01",
+    "name": "Мужской костюм 3мм",
+    "category": "cat7",
+    "price": 7000,
+    "likes": false,
+    "images": "gidrokos",
+    "comments": "12d7gb8k",
+    "quantity": 8,
+    "rate": 7
+  },
+  {
+    "id": "acc02",
+    "name": "BRP Audio-портативная система",
+    "category": "cat7",
+    "price": 2070,
+    "likes": false,
+    "images": "mafon",
+    "comments": "12d7gb8k",
+    "quantity": 4,
+    "rate": 4
+  },
+  {
+    "id": "acc03",
+    "name": "Спасательное снаряжение",
+    "category": "cat7",
+    "price": 3050,
+    "likes": false,
+    "images": "verovka",
+    "comments": "12d7gb8k",
+    "quantity": 22,
+    "rate": 7
+  },
+  {
+    "id": "acc04",
+    "name": "BRP Audio-Premium System",
+    "category": "cat7",
+    "price": 68000,
+    "likes": false,
+    "images": "binokl",
+    "comments": "12d7gb8k",
+    "quantity": 2,
+    "rate": 3
+  },
+  {
+    "id": "acc05",
+    "name": "Спасательный жилет BRP Mens Airflow PFD",
+    "category": "cat7",
+    "price": 6900,
+    "likes": false,
+    "images": "jilet",
+    "comments": "12d7gb8k",
+    "quantity": 8,
+    "rate": 9
+  },
+  {
+    "id": "acc06",
+    "name": "Водонепроницаемый Рюкзак",
+    "category": "cat7",
+    "price": 9800,
+    "likes": false,
+    "images": "rukzak",
+    "quantity": 12,
+    "rate": 6
+  },
+  {
+    "id": "acc07",
+    "name": "Спасательное снаряжение-2",
+    "category": "cat7",
+    "price": 1000,
+    "likes": false,
+    "images": "verovka",
+    "comments": "12d7gb8k",
+    "quantity": 5,
+    "rate": 9
+  }
+]

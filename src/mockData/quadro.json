@@ -1,0 +1,13 @@
+[
+  {
+    "id": "eng01",
+    "category": "cat1",
+    "name": "Квадроцикл",
+    "brand": "Suzuki DF9.9BRS",
+    "price": 225000,
+    "likes": false,
+    "images": "drive",
+    "comments": "12d7gb8k",
+    "rate": 25
+  }
+]

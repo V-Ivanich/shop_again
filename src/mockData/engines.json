@@ -1,0 +1,41 @@
+[
+  {
+    "id": "eng01",
+    "category": "Двигатели",
+    "name": "Лодочный мотор",
+    "brand": "Suzuki DF9.9BRS",
+    "price": 225000,
+    "likes": false,
+    "promotion": { "sale": 15, "new": false, "hit": false, "diler": 0 },
+    "images": "drive",
+    "comments": "12d7gb8k",
+    "quantity": 2,
+    "rate":3
+  },
+  {
+    "id": "eng02",
+    "category": "Двигатели",
+    "name": "Лодочный мотор",
+    "brand": "Toyota F9.45RS",
+    "price": 189780,
+    "likes": false,
+    "promotion": { "sale": 5, "new": false, "hit": false, "diler": 0 },
+    "images": "drive",
+    "comments": "12d7gb8k",
+    "quantity": 1,
+    "rate":3
+  },
+  {
+    "id": "eng03",
+    "category": "cat6",
+    "name": "Лодочный мотор",
+    "brand": "Honda HD.59-S",
+    "price": 169000,
+    "likes": false,
+    "promotion": { "sale": 10, "new": false,"hit": false, "diler": 0 },
+    "images": "drive",
+    "comments": "12d7gb8k",
+    "quantity": 3,
+    "rate": 4
+  }
+]

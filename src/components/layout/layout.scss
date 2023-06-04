@@ -1,0 +1,11 @@
+.layout__container {
+  position: relative;
+  width: 1024px;
+  margin: 0 auto;
+
+  .outlet__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
