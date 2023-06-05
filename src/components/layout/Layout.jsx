@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import { Header } from '../header/Header'
-import { Footer } from '../footer/Footer'
+// import { Footer } from '../footer/Footer'
 import './layout.scss'
 
 const Layout = () => {
@@ -11,7 +11,7 @@ const Layout = () => {
         <main className='outlet__container'>
           <Outlet />
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   )

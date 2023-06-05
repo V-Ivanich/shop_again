@@ -32,8 +32,11 @@ const PCnavBar = () => {
           </NavLink>
         </Col>
         <Col className='col-3 d-flex justify-content-center'>
-          <NavLink className='nav-links' to='/map'>
-            <img className='mx-2 pb-3' src={maps} alt='noLogo' />
+          <NavLink className='nav-links d-flex align-items-center' to='/map'>
+            <div className='icons__map'>
+              <img className='mx-2' src={maps} alt='noLogo' />
+            </div>
+
             <strong>Москва,ул.Науки 25</strong>
           </NavLink>
         </Col>

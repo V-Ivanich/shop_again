@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { MobilNavBar } from '../common/mobilNavBar/mobilNavBar'
 import { PCnavBar } from '../common/pcNavBar/pcNavBar'
+// import { ModalMenu } from '../modalMenu/modalMenu'
 import { Spinner } from '../common/spinner/spinner'
 
 import './header.scss'
@@ -60,6 +61,7 @@ const Header = () => {
 
           <div className='navbar__content__mobile'>
             <MobilNavBar />
+            {/* <ModalMenu /> */}
           </div>
 
           <div className='navbar__content__pc'>

@@ -1,0 +1,94 @@
+.card_template {
+  .card {
+    position: relative;
+    width: 270px;
+    height: 400px;
+    transition: all .3s ease-in-out ;
+
+    &:hover {
+      box-shadow: 3px 3px 10px rgba(50, 50, 50, 0.25);
+      transform: translate(-1px, -2px);
+    }
+
+    .for-images{
+      cursor: pointer;
+      margin: 52px 10px 0;
+      padding: 6px;
+      border: 1px solid rgba(186, 244, 233, 0.701);
+      border-radius: 6px;
+      width: 250px;
+      height: 200px;
+    }
+
+    .name-model{
+      margin: 24px auto 0px auto;
+      width: 230px;
+      height: 50px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.48px;
+    }
+
+    .price {
+      margin-top: 25px;
+      margin-bottom: 31px;
+      height: 36px;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+    }
+
+    .like {
+      position: absolute;
+      top: 16px;
+      right: 18px;
+      cursor: pointer;
+
+      .heart {
+        fill: darkgray;
+
+        &:hover {
+          fill: darksalmon;
+        }
+      }
+
+      .heart-fill {
+        fill: rgb(148, 215, 234);
+
+        &:hover {
+          fill: rgba(240, 159, 175, 0.814);
+        }
+      }
+
+    }
+
+    .basket {
+      cursor: pointer;
+      width: 60px;
+      height: 40px;
+      padding: 6px 16px 12px 14px;
+      background-color: rgba(117, 177, 205, 0.807);
+      border-top-left-radius: 9px;
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+
+      &:hover {
+        background-color: rgba(49, 199, 249, 0.709);
+      }
+
+      &:active {
+        background-color: rgba(125, 239, 125, 0.828);
+      }
+
+      .basket-item {
+        fill: white;
+      }
+    }
+    .active-basket {
+      background-color: rgba(125, 239, 125, 0.828);
+    }
+  }
+
+}
