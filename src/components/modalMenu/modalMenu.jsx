@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import Modal from 'react-bootstrap/Modal'
 import { Link } from 'react-router-dom'
-import { ReactComponent as User } from '../../image/Mens.svg'
-import './modalMenu'
+// import { ReactComponent as User } from '../../image/Mens.svg'
+import './modalMenu.scss'
 
 function ModalMenu({ smShow, setSmShow }) {
   return (
@@ -70,6 +70,6 @@ function ModalMenu({ smShow, setSmShow }) {
 }
 ModalMenu.propTypes = {
   smShow: PropTypes.bool,
-  setSmShow: PropTypes.bool,
+  setSmShow: PropTypes.func,
 }
 export { ModalMenu }
