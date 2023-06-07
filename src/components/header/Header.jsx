@@ -1,5 +1,6 @@
+import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
-import { MobilNavBar } from '../common/mobilNavBar/mobilNavBar'
+// import { MobilNavBar } from '../common/mobilNavBar/mobilNavBar'
 import { PCnavBar } from '../common/pcNavBar/pcNavBar'
 // import { ModalMenu } from '../modalMenu/modalMenu'
 import { Spinner } from '../common/spinner/spinner'
@@ -50,22 +51,44 @@ const getCatalog = [
   },
 ]
 const Header = () => {
+  const [theme, setTheme] = useState('light')
+
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark')
+  }
+
+  useEffect(() => {
+    document.body.setAttribute('data-theme', theme)
+  }, [theme])
+
   return (
     <>
       <div className='navbar__container'>
         <div className='menu_nav'>
-          <div className='wave wave1'></div>
-          <div className='wave wave2'></div>
-          <div className='wave wave3'></div>
-          <div className='wave wave4'></div>
+          <div
+            className={
+              theme === 'light' ? 'wave wave1' : 'wave active wave1'
+            }></div>
+          <div
+            className={
+              theme === 'light' ? 'wave wave2' : 'wave active wave2'
+            }></div>
+          <div
+            className={
+              theme === 'light' ? 'wave wave3' : 'wave active wave3'
+            }></div>
+          <div
+            className={
+              theme === 'light' ? 'wave wave4' : 'wave active wave4'
+            }></div>
 
-          <div className='navbar__content__mobile'>
-            <MobilNavBar />
-            {/* <ModalMenu /> */}
-          </div>
+          {/* <div className='navbar__content__mobile'> */}
+          {/* <MobilNavBar /> */}
+          {/* <ModalMenu /> */}
+          {/* </div> */}
 
           <div className='navbar__content__pc'>
-            <PCnavBar />
+            <PCnavBar onClick={toggleTheme} theme={theme} />
           </div>
         </div>
 

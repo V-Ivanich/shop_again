@@ -9,3 +9,8 @@
     align-items: center;
   }
 }
+@media (max-width: 1024px){
+  .layout__container {
+    width: 1024px;
+  }
+}

@@ -14,7 +14,7 @@
   --main-text: #2F3035;
   --text-secondary: #C4C4C4;
   --badge-bg: rgba(185, 232, 236, 0.806);
-  --shadow: 3px 3px 20px 0px #32323240;
+  // --shadow: 3px 3px 20px 0px #32323240;
 
     /* typography */
   --family: 'Dosis', sans-serif;
@@ -25,13 +25,31 @@
   --weight-bold: 600;
 
     /* border */
-  --radii: 1rem;
+  --radii: .25rem;
   --radii-full: 50%;
+}
+
+body[data-theme='dark'] {
+  --colors-text: hsl(0, 0%, 100%);
+  --colors-bg: hsl(207, 26%, 17%);
+  --colors-ui-base: hsl(209, 23%, 22%);
+
+  --shadow:rgba(245,245,245, 0.2) 0 0 8px;
+}
+body[data-theme='light'] {
+  --colors-text: hsl(200, 15%, 8%);
+  --colors-bg: hsl(0, 0%, 98%);
+  --colors-ui-base: hsl(0, 0%, 100%);
+
+  --shadow:3px 3px 20px 0px #32323240;
 }
 
 body {
   margin: 0;
   font-family: var(--family);
+  color: var(--colors-text);
+  font-weight: var(--weight-normal);
+  background-color: var(--colors-bg);
 
   a {
     text-decoration: none;
