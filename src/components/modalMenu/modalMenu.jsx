@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import Modal from 'react-bootstrap/Modal'
 import { Link } from 'react-router-dom'
-// import { ReactComponent as User } from '../../image/Mens.svg'
+import User from '../../image/Mens.svg'
 import './modalMenu.scss'
 
 function ModalMenu({ smShow, setSmShow }) {
@@ -19,10 +19,16 @@ function ModalMenu({ smShow, setSmShow }) {
         </Modal.Header>
         <Modal.Body className='py-2'>
           <div className='field'>
-            <Link to='/'>Войти</Link>
+            <Link to='/'>
+              <img src={User} alt='no' />
+              Войти
+            </Link>
           </div>
           <div className='field'>
-            <Link to='/'>Зарегистрироваться</Link>
+            <Link to='/'>
+              <img src={User} alt='no' />
+              Зарегистрироваться
+            </Link>
           </div>
           <div className='field'>
             <Link to='/'>Избранное</Link>
