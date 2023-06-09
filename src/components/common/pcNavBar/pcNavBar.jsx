@@ -1,16 +1,28 @@
 import { NavLink } from 'react-router-dom'
 import { ReactComponent as Logo } from '../../../image/logo.svg'
-import maps from '../../../image/maps.svg'
-import { ReactComponent as Heart } from '../../../image/Heart.svg'
 import { ReactComponent as Mens } from '../../../image/Mens.svg'
 import { ReactComponent as Basket } from '../../../image/Basket.svg'
-import { IoMoon, IoMoonOutline } from 'react-icons/io5'
+import {
+  IoMoon,
+  IoMoonOutline,
+  IoReorderThree,
+  IoHeartOutline,
+} from 'react-icons/io5'
+import { MdOutlineLocationOn } from 'react-icons/md'
+import { TbUserCheck, TbUser, TbShoppingCart } from 'react-icons/tb'
 import './pcNavBar.scss'
 
 const PCnavBar = ({ onClick, theme }) => {
   return (
     <>
       <div className='pc__container'>
+        <div className='burger__menu'>
+          <IoReorderThree size='2rem' />
+        </div>
+        <div className='mobile__logo'>
+          <h5>DRIVE MOTO</h5>
+        </div>
+
         <div className=' div-1'>
           <NavLink className='nav-links' to='/shops'>
             <strong>Магазины</strong>
@@ -32,12 +44,11 @@ const PCnavBar = ({ onClick, theme }) => {
           {/* </NavLink> */}
         </div>
         <div className='div-5'>
-          <NavLink className='nav-links d-flex align-items-center' to='/map'>
+          <NavLink className='nav-links__location' to='/map'>
             <div className='icons__map'>
-              <img
+              <MdOutlineLocationOn
+                size='1.5rem'
                 className={theme == 'dark' ? 'icons' : ''}
-                src={maps}
-                alt='noLogo'
               />
             </div>
 
@@ -47,25 +58,32 @@ const PCnavBar = ({ onClick, theme }) => {
         <div className='div-6'>
           <div className='icons-box'>
             <a className='ms-2' href='#'>
-              <Heart className={theme == 'dark' ? 'icons' : ''} />
+              <IoHeartOutline
+                size='1.5rem'
+                className={theme == 'dark' ? 'icons' : ''}
+              />
+              {/* <Heart className={theme == 'dark' ? 'icons' : ''} /> */}
             </a>
           </div>
 
           <div className='icons-box'>
             <a className='ms-3 position-relative' href='#'>
-              <Mens className={theme == 'dark' ? 'icons' : ''} />
-              <span className='position-absolute top-0 start-100 translate-middle text-success'>
-                &#10003;
-              </span>
+              <TbUser
+                size='1.5rem'
+                className={theme == 'dark' ? 'icons' : ''}
+              />
+              {/* <Mens className={theme == 'dark' ? 'icons' : ''} /> */}
             </a>
           </div>
 
           <div className='icons-box'>
-            <a className='ms-3 position-relative' href='#'>
-              <Basket className={theme == 'dark' ? 'icons' : ''} />
-              <small className='position-absolute top-0 start-100 translate-middle badge rounded-pill bg-badge text-info'>
-                {/* {countBasket} */}0
-              </small>
+            <a href='#'>
+              <TbShoppingCart
+                size='1.5rem'
+                className={theme == 'dark' ? 'icons' : ''}
+              />
+              {/* <Basket className={theme == 'dark' ? 'icons' : ''} /> */}
+              <small className='count-product'>{/* {countBasket} */}0</small>
             </a>
           </div>
         </div>

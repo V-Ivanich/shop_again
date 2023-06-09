@@ -3,7 +3,7 @@ import { Layout } from './components/layout/Layout'
 import { Homepage } from './pages/homepage/Homepage'
 import { Aboutpage } from './pages/Aboutpage'
 import { Blogpage } from './pages/Blogpage'
-import { Footer } from './components/footer/Footer'
+// import { Footer } from './components/footer/Footer'
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Route path='posts' element={<Blogpage />} />
         </Route>
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

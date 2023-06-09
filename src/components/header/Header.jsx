@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
-// import { MobilNavBar } from '../common/mobilNavBar/mobilNavBar'
 import { PCnavBar } from '../common/pcNavBar/pcNavBar'
-// import { ModalMenu } from '../modalMenu/modalMenu'
 import { Spinner } from '../common/spinner/spinner'
+import { Container } from '../../templates/container/container'
 
 import './header.scss'
 
@@ -62,7 +61,7 @@ const Header = () => {
   }, [theme])
 
   return (
-    <>
+    <Container>
       <div className='navbar__container'>
         <div className='menu_nav'>
           <div
@@ -82,14 +81,11 @@ const Header = () => {
               theme === 'light' ? 'wave wave4' : 'wave active wave4'
             }></div>
 
-          {/* <div className='navbar__content__mobile'> */}
-          {/* <MobilNavBar /> */}
-          {/* <ModalMenu /> */}
-          {/* </div> */}
-
-          <div className='navbar__content__pc'>
-            <PCnavBar onClick={toggleTheme} theme={theme} />
-          </div>
+          <PCnavBar
+            className='navbar__content__pc'
+            onClick={toggleTheme}
+            theme={theme}
+          />
         </div>
 
         <div className='navbar__content__bottom'>
@@ -110,7 +106,7 @@ const Header = () => {
           )}
         </div>
       </div>
-    </>
+    </Container>
   )
 }
 
