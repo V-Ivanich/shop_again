@@ -5,9 +5,18 @@
   color: var(--colors-text);
   align-items: center;
 
+  .navs-links {
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color:var(--badge-bg);
+    }
+  }
+
   .icons-box {
     position: relative;
     margin: 0 0.4rem;
+    color: var(--colors-text);
   }
   .count-product {
     position: absolute;

@@ -8,12 +8,11 @@
 
 :root{
 /* colors */
-  --prymary-bg:#E5E5E5;
-  --accent: #1C62CD;
-  --base: #F0F0F4;
-  --main-text: #2F3035;
-  --text-secondary: #C4C4C4;
-  --badge-bg: rgba(154, 199, 203, 0.806);
+  // --prymary-bg:#E5E5E5;
+  // --accent: #1C62CD;
+  // --main-text: #2F3035;
+  // --text-secondary: #C4C4C4;
+  --badge-bg: rgba(121, 170, 186, 0.806);
   // --shadow: 3px 3px 20px 0px #32323240;
 
     /* typography */
@@ -30,14 +29,16 @@
 }
 
 body[data-theme='dark'] {
-  --colors-text: hsl(0, 0%, 100%);
+  --colors-text: #f8f9f9;
+  --colors-nav-base: #4a626e;
   --colors-bg: hsl(207, 26%, 17%);
   --colors-ui-base: hsl(209, 23%, 22%);
 
   --shadow:rgba(245,245,245, 0.2) 0 0 8px;
 }
 body[data-theme='light'] {
-  --colors-text: hsl(200, 15%, 8%);
+  --colors-text: #2F3035;
+  --colors-nav-base: #F0F0F4;
   --colors-bg: hsl(0, 0%, 98%);
   --colors-ui-base: hsl(0, 0%, 100%);
 
@@ -53,6 +54,25 @@ body {
 
   a {
     text-decoration: none;
-    color: var(--main-text);
+    color: var(--colors-text);
+  }
+
+  .nav-links {
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      transform: translate(0px, -1px);
+      color:rgba(148, 194, 240, 0.804);
+      text-decoration: underline 3px rgb(68, 202, 204);
+      text-underline-offset: 20px ;
+    }
+
+    &.active {
+      font-weight: 500;
+      color: rgb(37, 16, 104);
+      text-decoration: underline 3px rgb(59, 81, 207);
+      text-underline-offset: 24px ;
+    }
   }
 }
+

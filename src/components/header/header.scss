@@ -15,16 +15,6 @@
     background: linear-gradient(rgba(106, 149, 138, 0.07), rgb(96, 171, 201));
     z-index: 20;
 
-    .nav-links {
-      color: rgb(17, 17, 54);
-      transition: all .3s ease-in-out ;
-
-      &:hover {
-        color: rgba(61, 148, 182, 0.804);
-        transform: translate(0px, -1px);
-      }
-    }
-
     .wave {
       position: absolute;
       top:10px;
@@ -76,33 +66,15 @@
   .navbar__content__bottom {
     width: 100%;
     margin-top: 15px;
-    background-color:var(--base);
+    background-color:var(--colors-nav-base);
     border-radius: var(--radii);
 
     .catalog {
       display: flex;
       height: 53px;
+      padding: 0 1rem;
       justify-content: space-between;
       align-items: center;
-      padding: 0 1rem;
-
-      .nav-links {
-        transition: all .3s ease-in-out;
-
-        &:hover {
-          transform: translate(0px, -1px);
-          color:rgba(148, 194, 240, 0.804);
-          text-decoration: underline 3px rgb(68, 202, 204);
-          text-underline-offset: 20px ;
-        }
-
-        &.active {
-          font-weight: 500;
-          color: rgb(37, 16, 104);
-          text-decoration: underline 3px rgb(59, 81, 207);
-          text-underline-offset: 20px ;
-        }
-      }
     }
   }
   

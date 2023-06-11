@@ -1,7 +1,5 @@
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { ReactComponent as Logo } from '../../../image/logo.svg'
-import { ReactComponent as Mens } from '../../../image/Mens.svg'
-import { ReactComponent as Basket } from '../../../image/Basket.svg'
 import {
   IoMoon,
   IoMoonOutline,
@@ -24,70 +22,55 @@ const PCnavBar = ({ onClick, theme }) => {
         </div>
 
         <div className=' div-1'>
-          <NavLink className='nav-links' to='/shops'>
-            <strong>Магазины</strong>
-          </NavLink>
+          <Link to='/shops'>
+            <strong className='navs-links'>Магазины</strong>
+          </Link>
         </div>
         <div className='div-2'>
-          <NavLink className='nav-links' to='/action'>
-            <strong>Акции</strong>
-          </NavLink>
+          <Link to='/action'>
+            <strong className='navs-links'>Акции</strong>
+          </Link>
         </div>
         <div className='div-3'>
-          <NavLink className='nav-links' to='/case'>
-            <strong>Доставка и оплата</strong>
-          </NavLink>
+          <Link to='/case'>
+            <strong className='navs-links'>Доставка и оплата</strong>
+          </Link>
         </div>
         <div className='div-4'>
-          {/* <NavLink to='/'> */}
+          {/* <Link to='/'> */}
           <Logo className={theme == 'dark' ? 'icons' : ''} />
-          {/* </NavLink> */}
+          {/* </Link> */}
         </div>
         <div className='div-5'>
-          <NavLink className='nav-links__location' to='/map'>
+          <Link className='nav-links__location navs-links' to='/map'>
             <div className='icons__map'>
-              <MdOutlineLocationOn
-                size='1.5rem'
-                className={theme == 'dark' ? 'icons' : ''}
-              />
+              <MdOutlineLocationOn size='1.5rem' />
             </div>
 
-            <strong>Москва,ул.Науки 25</strong>
-          </NavLink>
+            <strong className='navs-links'>Москва,ул.Науки 25</strong>
+          </Link>
         </div>
         <div className='div-6'>
           <div className='icons-box'>
-            <a className='ms-2' href='#'>
-              <IoHeartOutline
-                size='1.5rem'
-                className={theme == 'dark' ? 'icons' : ''}
-              />
-              {/* <Heart className={theme == 'dark' ? 'icons' : ''} /> */}
+            <a className='navs-links' href='#'>
+              <IoHeartOutline size='1.5rem' />
             </a>
           </div>
 
           <div className='icons-box'>
-            <a className='ms-3 position-relative' href='#'>
-              <TbUser
-                size='1.5rem'
-                className={theme == 'dark' ? 'icons' : ''}
-              />
-              {/* <Mens className={theme == 'dark' ? 'icons' : ''} /> */}
+            <a className='navs-links' href='#'>
+              <TbUser size='1.5rem' />
             </a>
           </div>
 
           <div className='icons-box'>
-            <a href='#'>
-              <TbShoppingCart
-                size='1.5rem'
-                className={theme == 'dark' ? 'icons' : ''}
-              />
-              {/* <Basket className={theme == 'dark' ? 'icons' : ''} /> */}
+            <a href='#' className='navs-links'>
+              <TbShoppingCart size='1.5rem' />
               <small className='count-product'>{/* {countBasket} */}0</small>
             </a>
           </div>
         </div>
-        <div className='div-7' onClick={onClick}>
+        <div className='div-7 navs-links' onClick={onClick}>
           {theme === 'light' ? (
             <IoMoonOutline size='16px' />
           ) : (
@@ -95,7 +78,7 @@ const PCnavBar = ({ onClick, theme }) => {
           )}
 
           <span style={{ marginLeft: '0.5rem' }}>
-            <strong>{theme}</strong>
+            <strong className='navs-links'>{theme}</strong>
           </span>
         </div>
       </div>
