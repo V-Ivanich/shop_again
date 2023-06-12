@@ -1,3 +1,16 @@
-.nome__page {
-  max-width: 1024px;
+.wrapper-home__baner {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper-home__category {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-between;
+  height: 288px;
+  margin-top: 30px;
 }

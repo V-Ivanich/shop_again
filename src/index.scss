@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 :root{
@@ -11,9 +12,8 @@
   // --prymary-bg:#E5E5E5;
   // --accent: #1C62CD;
   // --main-text: #2F3035;
-  // --text-secondary: #C4C4C4;
   --badge-bg: rgba(121, 170, 186, 0.806);
-  // --shadow: 3px 3px 20px 0px #32323240;
+  --colors-border: 1px solid #CDCDCD;
 
     /* typography */
   --family: 'Dosis', sans-serif;
@@ -24,7 +24,7 @@
   --weight-bold: 600;
 
     /* border */
-  --radii: .25rem;
+  --radii: .3rem;
   --radii-full: 50%;
 }
 
@@ -33,20 +33,23 @@ body[data-theme='dark'] {
   --colors-nav-base: #4a626e;
   --colors-bg: hsl(207, 26%, 17%);
   --colors-ui-base: hsl(209, 23%, 22%);
+  --text-secondary: #dad6d6d6;
 
-  --shadow:rgba(245,245,245, 0.2) 0 0 8px;
+  --shadow:6px 6px 20px rgba(254, 244, 244, 0.288);
+  --shadow-text: rgba(181, 193, 194, 0.638) 2px 1px 3px;
 }
 body[data-theme='light'] {
-  --colors-text: #2F3035;
+  --colors-text: #3b3b3f;
+  --text-secondary: #C4C4C4;
   --colors-nav-base: #F0F0F4;
   --colors-bg: hsl(0, 0%, 98%);
   --colors-ui-base: hsl(0, 0%, 100%);
 
-  --shadow:3px 3px 20px 0px #32323240;
+  --shadow:6px 6px 20px 0px #22202040;
+  --shadow-text: rgb(70, 90, 91) 2px 1px 3px;
 }
 
 body {
-  margin: 0;
   font-family: var(--family);
   color: var(--colors-text);
   font-weight: var(--weight-normal);
@@ -55,6 +58,12 @@ body {
   a {
     text-decoration: none;
     color: var(--colors-text);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
 
   .nav-links {

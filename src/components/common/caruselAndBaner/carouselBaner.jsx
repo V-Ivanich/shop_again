@@ -42,35 +42,6 @@ const CarouselBaner = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      {/* <div className='baner-carousel'>
-        <Carousel controls={false} indicators={false}>
-          <CarouselItem>
-            <img className='d-block w-100' src={kater} alt='Photo0' />
-            <Carousel.Caption>
-              <h1 className='text-light'>Почувствуй скорость и экстрим</h1>
-            </Carousel.Caption>
-          </CarouselItem>
-          <CarouselItem>
-            <img className='d-block w-100' src={oneImg} alt='Photo1' />
-            <Carousel.Caption>
-              <h1 className='text-dark'>Отдыхай и наслаждайся!</h1>
-            </Carousel.Caption>
-          </CarouselItem>
-          <CarouselItem>
-            <img className='d-block w-100' src={twoImg} alt='Photo2' />
-            <Carousel.Caption>
-              <h1 className='text-warning'>Для тебя нет преград</h1>
-            </Carousel.Caption>
-          </CarouselItem>
-          <CarouselItem>
-            <img className='d-block w-100' src={theeImg} alt='Photo3' />
-            <Carousel.Caption>
-              <h1 className='text-warning'>И снег не помеха</h1>
-            </Carousel.Caption>
-          </CarouselItem>
-        </Carousel>
-        < className='baner'>{/* <CardTemplate dataItem={sale} /> */}
-      {/* </div>  */}
     </>
   )
 }

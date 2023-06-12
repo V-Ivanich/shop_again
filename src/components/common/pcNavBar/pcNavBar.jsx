@@ -8,32 +8,33 @@ import {
 } from 'react-icons/io5'
 import { MdOutlineLocationOn } from 'react-icons/md'
 import { TbUserCheck, TbUser, TbShoppingCart } from 'react-icons/tb'
+import PropTypes from 'prop-types'
 import './pcNavBar.scss'
 
-const PCnavBar = ({ onClick, theme }) => {
+const PCnavBar = ({ onClick, theme, setVisible }) => {
   return (
     <>
       <div className='pc__container'>
-        <div className='burger__menu'>
+        <div className='burger__menu' onClick={() => setVisible(true)}>
           <IoReorderThree size='2rem' />
         </div>
         <div className='mobile__logo'>
-          <h5>DRIVE MOTO</h5>
+          <h3>DRIVE MOTO</h3>
         </div>
 
-        <div className=' div-1'>
+        <div className=' div-1 navs-links'>
           <Link to='/shops'>
-            <strong className='navs-links'>Магазины</strong>
+            <strong>Магазины</strong>
           </Link>
         </div>
         <div className='div-2'>
-          <Link to='/action'>
-            <strong className='navs-links'>Акции</strong>
+          <Link className='navs-links' to='/action'>
+            <strong>Акции</strong>
           </Link>
         </div>
         <div className='div-3'>
-          <Link to='/case'>
-            <strong className='navs-links'>Доставка и оплата</strong>
+          <Link className='navs-links' to='/case'>
+            <strong>Доставка и оплата</strong>
           </Link>
         </div>
         <div className='div-4'>
@@ -47,30 +48,30 @@ const PCnavBar = ({ onClick, theme }) => {
               <MdOutlineLocationOn size='1.5rem' />
             </div>
 
-            <strong className='navs-links'>Москва,ул.Науки 25</strong>
+            <strong>Москва,ул.Науки 25</strong>
           </Link>
         </div>
         <div className='div-6'>
           <div className='icons-box'>
             <a className='navs-links' href='#'>
-              <IoHeartOutline size='1.5rem' />
+              <IoHeartOutline size='1.5rem' className='icons-size' />
             </a>
           </div>
 
           <div className='icons-box'>
             <a className='navs-links' href='#'>
-              <TbUser size='1.5rem' />
+              <TbUser size='1.5rem' className='icons-size' />
             </a>
           </div>
 
           <div className='icons-box'>
             <a href='#' className='navs-links'>
-              <TbShoppingCart size='1.5rem' />
+              <TbShoppingCart size='1.5rem' className='icons-size' />
               <small className='count-product'>{/* {countBasket} */}0</small>
             </a>
           </div>
         </div>
-        <div className='div-7 navs-links' onClick={onClick}>
+        <div className='div-7' onClick={onClick}>
           {theme === 'light' ? (
             <IoMoonOutline size='16px' />
           ) : (
@@ -78,7 +79,7 @@ const PCnavBar = ({ onClick, theme }) => {
           )}
 
           <span style={{ marginLeft: '0.5rem' }}>
-            <strong className='navs-links'>{theme}</strong>
+            <strong>{theme}</strong>
           </span>
         </div>
       </div>
@@ -86,4 +87,9 @@ const PCnavBar = ({ onClick, theme }) => {
   )
 }
 
+PCnavBar.propTypes = {
+  theme: PropTypes.string,
+  onClick: PropTypes.func,
+  setVisible: PropTypes.func,
+}
 export { PCnavBar }

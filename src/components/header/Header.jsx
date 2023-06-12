@@ -3,54 +3,14 @@ import { NavLink } from 'react-router-dom'
 import { PCnavBar } from '../common/pcNavBar/pcNavBar'
 import { Spinner } from '../common/spinner/spinner'
 import { Container } from '../../templates/container/container'
+import { ShadowPanel } from '../common/mobileWindow/shadowPanel'
+import { getCatalog } from '../../testBasa/basa'
 
 import './header.scss'
 
-const getCatalog = [
-  {
-    id: 'cat1',
-    name: 'Квадроциклы',
-    image: 'kvadro',
-    links: 'quadro',
-  },
-  {
-    id: 'cat2',
-    name: 'Гидроциклы',
-    image: 'gidrocikl',
-    links: 'gidrotsikly',
-  },
-  {
-    id: 'cat3',
-    name: 'Катера',
-    image: 'katera',
-    links: 'launch',
-  },
-  {
-    id: 'cat4',
-    name: 'Снегоходы',
-    image: 'snego',
-    links: 'snowmobiles',
-  },
-  {
-    id: 'cat5',
-    name: 'Вездеходы',
-    image: 'vezdehod',
-    links: 'atvs',
-  },
-  {
-    id: 'cat6',
-    name: 'Двигатели',
-    image: 'drive',
-    links: 'engines',
-  },
-  {
-    id: 'cat7',
-    name: 'Аксессуары',
-    links: 'accessories',
-  },
-]
 const Header = () => {
   const [theme, setTheme] = useState('light')
+  const [visibleMobilePanel, setVisibleMobilePanel] = useState(false)
 
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
@@ -62,6 +22,10 @@ const Header = () => {
 
   return (
     <Container>
+      <ShadowPanel
+        visibleMobilePanel={visibleMobilePanel}
+        setVisibleMobilePanel={setVisibleMobilePanel}
+      />
       <div className='navbar__container'>
         <div className='menu_nav'>
           <div
@@ -85,6 +49,7 @@ const Header = () => {
             className='navbar__content__pc'
             onClick={toggleTheme}
             theme={theme}
+            setVisible={setVisibleMobilePanel}
           />
         </div>
 
