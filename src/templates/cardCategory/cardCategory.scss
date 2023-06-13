@@ -5,9 +5,16 @@
   justify-content: space-between;
   align-items: center;
 
+  background-color: var(--colors-ui-base);
   border: var(--colors-border);
   border-radius: var(--radii);
   color: var(--colors-text);
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    box-shadow: var(--shadow);
+    transform: translate(-2px, -4px);
+  }
 
   .left-content {
     position: relative;
@@ -18,7 +25,7 @@
       position: absolute;
       top: 16px;
       left: 20px;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       text-shadow: var(--shadow-text);
     }
 

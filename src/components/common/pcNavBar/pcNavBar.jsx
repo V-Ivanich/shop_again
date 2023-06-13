@@ -27,13 +27,13 @@ const PCnavBar = ({ onClick, theme, setVisible }) => {
             <strong>Магазины</strong>
           </Link>
         </div>
-        <div className='div-2'>
-          <Link className='navs-links' to='/action'>
+        <div className='div-2 navs-links'>
+          <Link to='/action'>
             <strong>Акции</strong>
           </Link>
         </div>
-        <div className='div-3'>
-          <Link className='navs-links' to='/case'>
+        <div className='div-3 navs-links'>
+          <Link to='/case'>
             <strong>Доставка и оплата</strong>
           </Link>
         </div>
@@ -42,8 +42,8 @@ const PCnavBar = ({ onClick, theme, setVisible }) => {
           <Logo className={theme == 'dark' ? 'icons' : ''} />
           {/* </Link> */}
         </div>
-        <div className='div-5'>
-          <Link className='nav-links__location navs-links' to='/map'>
+        <div className='div-5 navs-links'>
+          <Link className='nav-links__location' to='/map'>
             <div className='icons__map'>
               <MdOutlineLocationOn size='1.5rem' />
             </div>
@@ -52,26 +52,26 @@ const PCnavBar = ({ onClick, theme, setVisible }) => {
           </Link>
         </div>
         <div className='div-6'>
-          <div className='icons-box'>
-            <a className='navs-links' href='#'>
+          <div className='icons-box navs-links'>
+            <a href='#'>
               <IoHeartOutline size='1.5rem' className='icons-size' />
             </a>
           </div>
 
-          <div className='icons-box'>
-            <a className='navs-links' href='#'>
+          <div className='icons-box navs-links'>
+            <a href='#'>
               <TbUser size='1.5rem' className='icons-size' />
             </a>
           </div>
 
-          <div className='icons-box'>
-            <a href='#' className='navs-links'>
+          <div className='icons-box navs-links'>
+            <a href='#'>
               <TbShoppingCart size='1.5rem' className='icons-size' />
               <small className='count-product'>{/* {countBasket} */}0</small>
             </a>
           </div>
         </div>
-        <div className='div-7' onClick={onClick}>
+        <div className='div-7 navs-links' onClick={onClick}>
           {theme === 'light' ? (
             <IoMoonOutline size='16px' />
           ) : (

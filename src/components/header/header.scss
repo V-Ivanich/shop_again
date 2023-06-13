@@ -75,7 +75,24 @@
       padding: 0 1rem;
       justify-content: space-between;
       align-items: center;
-      text-shadow: var(--shadow-text);
+
+      .nav-links {
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          transform: translateY(-2px);
+          color:rgba(165, 176, 187, 0.814);
+          text-decoration: underline 3px rgb(68, 202, 204);
+          text-underline-offset: 20px ;
+        }
+
+        &.active {
+          font-weight: 500;
+          color: rgb(37, 16, 104);
+          text-decoration: underline 3px rgb(59, 81, 207);
+          text-underline-offset: 24px ;
+        }
+      }
     }
   }
   

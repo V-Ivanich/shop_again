@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Big+Shoulders+Inline+Display:wght@200;300&family=Dosis:wght@300;400;500;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Big+Shoulders+Inline+Display:wght@200;300&family=Dosis:wght@300;400;500;600&display=swap');
 
 
 * {
@@ -9,14 +9,11 @@
 
 :root{
 /* colors */
-  // --prymary-bg:#E5E5E5;
-  // --accent: #1C62CD;
-  // --main-text: #2F3035;
   --badge-bg: rgba(121, 170, 186, 0.806);
-  --colors-border: 1px solid #CDCDCD;
+
 
     /* typography */
-  --family: 'Dosis', sans-serif;
+  --family: 'Roboto', sans-serif;
   --fs-base: 1.2rem;
   --weight-minibold: 400;
   --weight-normal: 300;
@@ -29,24 +26,26 @@
 }
 
 body[data-theme='dark'] {
-  --colors-text: #f8f9f9;
+  --colors-text: #bacbcb;
   --colors-nav-base: #4a626e;
-  --colors-bg: hsl(207, 26%, 17%);
-  --colors-ui-base: hsl(209, 23%, 22%);
+  --colors-bg: hsl(219, 22%, 16%);
+  --colors-ui-base: hsla(208, 13%, 30%, 0.852);
   --text-secondary: #dad6d6d6;
 
+  --colors-border: 1px solid #1a1d20;
   --shadow:6px 6px 20px rgba(254, 244, 244, 0.288);
-  --shadow-text: rgba(181, 193, 194, 0.638) 2px 1px 3px;
+  --shadow-text: rgba(181, 193, 194, 0.5) 2px 1px 2px;
 }
 body[data-theme='light'] {
   --colors-text: #3b3b3f;
   --text-secondary: #C4C4C4;
   --colors-nav-base: #F0F0F4;
-  --colors-bg: hsl(0, 0%, 98%);
+  --colors-bg: rgba(131, 245, 215, 0.111);
   --colors-ui-base: hsl(0, 0%, 100%);
 
+  --colors-border: 1px solid #CDCDCD;
   --shadow:6px 6px 20px 0px #22202040;
-  --shadow-text: rgb(70, 90, 91) 2px 1px 3px;
+  --shadow-text: rgba(79, 90, 91, 0.548) 2px 1px 2px;
 }
 
 body {
@@ -66,22 +65,5 @@ body {
     list-style-type: none;
   }
 
-  .nav-links {
-    transition: all .3s ease-in-out;
-
-    &:hover {
-      transform: translate(0px, -1px);
-      color:rgba(148, 194, 240, 0.804);
-      text-decoration: underline 3px rgb(68, 202, 204);
-      text-underline-offset: 20px ;
-    }
-
-    &.active {
-      font-weight: 500;
-      color: rgb(37, 16, 104);
-      text-decoration: underline 3px rgb(59, 81, 207);
-      text-underline-offset: 24px ;
-    }
-  }
 }
 

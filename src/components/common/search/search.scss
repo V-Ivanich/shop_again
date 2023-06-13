@@ -1,0 +1,15 @@
+.wrapper-search {
+  width: 100%;
+  margin-top: 2.6rem;
+
+  .button-sections,
+  .input-sections {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  .input-sections {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

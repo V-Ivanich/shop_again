@@ -2,13 +2,18 @@
   position: relative;
   width: 271px;
   height: 403px;
-  box-shadow: var(--shadow);
-  text-shadow: var(--shadow-text);
 
+  background-color: var(--colors-ui-base);
   border: var(--colors-border);
   border-radius: var(--radii);
   color: var(--colors-text);
+  text-shadow: var(--shadow-text);
+  transition: all .3s ease-in-out ;
 
+  &:hover {
+    box-shadow: var(--shadow);
+    transform: translate(-1px, -2px);
+  }
 
   .top-block {
     position: relative;

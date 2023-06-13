@@ -2,6 +2,7 @@ import { CarouselBaner } from '../../components/common/caruselAndBaner/carouselB
 import { CardItem } from '../../templates/cardItem/CardItem'
 import { CardCategory } from '../../templates/cardCategory/CardCategory'
 import { getCatalog } from '../../testBasa/basa'
+import { Search } from '../../components/common/search/Search'
 import './homepage.scss'
 
 const Homepage = () => {
@@ -12,6 +13,7 @@ const Homepage = () => {
         <CarouselBaner />
         <CardItem />
       </div>
+      <Search />
       <div className='wrapper-home__category'>
         {catalog.map((itemCategori) => (
           <CardCategory key={itemCategori.id} itemCategories={itemCategori} />
