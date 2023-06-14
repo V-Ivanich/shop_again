@@ -81,7 +81,7 @@
 
         &:hover {
           transform: translateY(-2px);
-          color:rgba(165, 176, 187, 0.814);
+          color:var(--colors-hover);
           text-decoration: underline 3px rgb(68, 202, 204);
           text-underline-offset: 20px ;
         }

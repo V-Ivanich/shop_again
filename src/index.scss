@@ -32,6 +32,7 @@ body[data-theme='dark'] {
   --colors-ui-base: hsla(208, 13%, 30%, 0.852);
   --text-secondary: #dad6d6d6;
 
+  --colors-hover: #e28b2e;
   --colors-border: 1px solid #1a1d20;
   --shadow:6px 6px 20px rgba(254, 244, 244, 0.288);
   --shadow-text: rgba(181, 193, 194, 0.5) 2px 1px 2px;
@@ -43,6 +44,7 @@ body[data-theme='light'] {
   --colors-bg: rgba(131, 245, 215, 0.111);
   --colors-ui-base: hsl(0, 0%, 100%);
 
+  --colors-hover:#00665e;
   --colors-border: 1px solid #CDCDCD;
   --shadow:6px 6px 20px 0px #22202040;
   --shadow-text: rgba(79, 90, 91, 0.548) 2px 1px 2px;

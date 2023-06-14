@@ -1,13 +1,13 @@
-// import { Carousel, CarouselItem } from 'react-bootstrap'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Autoplay } from 'swiper'
+import { Pagination, Autoplay, Navigation } from 'swiper'
 import kater from '../../../image/gidrotsikl.png'
 import oneImg from '../../../image/katera.jpg'
 import twoImg from '../../../image/kvadrohod.jpg'
 import theeImg from '../../../image/snegohod.jpg'
 import 'swiper/scss'
-import 'swiper/css/pagination'
-import 'swiper/css/autoplay'
+import 'swiper/scss/navigation'
+import 'swiper/scss/pagination'
+import 'swiper/scss/autoplay'
 import './carouselBaner.scss'
 
 const CarouselBaner = () => {
@@ -15,29 +15,30 @@ const CarouselBaner = () => {
     <>
       <div className='slider'>
         <Swiper
-          // direction='horizontal'
-          modules={[Pagination, Autoplay]}
+          direction='horizontal'
+          modules={[Pagination, Autoplay, Navigation]}
+          spaceBetween={0}
+          navigation={true}
           pagination={{ clickable: true }}
-          // centeredSlides={true}
-          // slidesPerView={1}
+          centeredSlides={false}
           grabCursor={true}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
           }}
-          // speed={800}
+          speed={800}
           loop={true}
           className='mySwiper'>
-          <SwiperSlide>
+          <SwiperSlide className='swiper-slide'>
             <img src={kater} />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className='swiper-slide'>
             <img src={oneImg} />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className='swiper-slide'>
             <img src={twoImg} />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className='swiper-slide'>
             <img src={theeImg} />
           </SwiperSlide>
         </Swiper>

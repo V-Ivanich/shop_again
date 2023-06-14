@@ -6,15 +6,15 @@ const Input = ({ id, className, label, error, ...attrs }) => {
   const classes = classNames('input', className, { error })
 
   return (
-    <div className='inputWrapper'>
+    <div className='input-wrapper'>
       {label && (
-        <label className='inputLabel' htmlFor={id}>
+        <label className='input-label' htmlFor={id}>
           {label}
         </label>
       )}
-      {attrs.required && <span className='inputRequired'>Required</span>}
+      {attrs.required && <span className='input-required'>Required</span>}
       <input name={id} id={id} className={classes} {...attrs} />
-      {error && <span className='inputError'>{error}</span>}
+      {error && <span className='input-error'>{error}</span>}
     </div>
   )
 }

@@ -37,7 +37,7 @@
       transition: all .4s ease-in-out;
 
       &:hover {
-        color: rgb(89, 74, 70);
+        color: var(--colors-hover);
       }
     }
   }
