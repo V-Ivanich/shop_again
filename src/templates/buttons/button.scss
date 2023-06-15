@@ -2,13 +2,13 @@
   padding: 0.4rem 1.5rem;
   font-size: 1.2rem;
   cursor: pointer;
-  background-color: rgba(158, 214, 246, 0.882);
+  background-color: var(--colors-buttons);
   border: none;
   border-radius: var(--radii);
   transition: .1s ease-in-out;
 
   &:hover {
-    background-color: rgb(98, 160, 185);
+    background-color: var(--colors-hover-btn);
   }
 
   &:active {

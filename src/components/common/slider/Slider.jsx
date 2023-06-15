@@ -10,7 +10,7 @@ const Slider = ({ propsItems }) => {
   console.log(propsItems)
   return (
     <>
-      <div className='slider'>
+      <div className='slider-card'>
         <Swiper
           direction='horizontal'
           slidesPerView={4}
@@ -23,7 +23,7 @@ const Slider = ({ propsItems }) => {
           modules={[Navigation]}
           className='mySwiper'>
           {Object.keys(propsItems).map((item) => (
-            <SwiperSlide key={propsItems[item].id}>
+            <SwiperSlide className='swiper-slide' key={propsItems[item].id}>
               <CardItem dataItem={propsItems[item]} />
             </SwiperSlide>
           ))}

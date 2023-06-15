@@ -35,7 +35,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color: rgba(202, 246, 249, 0.5);
+    background-color: var(--colors-bg-image);
     border: var(--colors-border);
     border-radius: var(--radii);
 
@@ -78,7 +78,7 @@
       align-items: center;
       transform: scaleX(-1);
 
-      background-color: rgba(127, 180, 218, 0.879);
+      background-color: var(--colors-buttons);
       border-top-right-radius: 10px;
       border-bottom-left-radius: 4px;
       color: #fff;

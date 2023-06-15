@@ -13,7 +13,7 @@ import './carouselBaner.scss'
 const CarouselBaner = () => {
   return (
     <>
-      <div className='slider'>
+      <div className='slider-carusel'>
         <Swiper
           direction='horizontal'
           modules={[Pagination, Autoplay, Navigation]}

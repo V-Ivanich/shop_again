@@ -4,7 +4,7 @@ import { CardCategory } from '../../templates/cardCategory/CardCategory'
 import { getCatalog } from '../../testBasa/basa'
 import { Search } from '../../components/common/search/Search'
 import { Goods } from '../../testBasa/goods'
-import { PopularGuds } from '../../components/common/popularGoods/PopularGuds'
+import { PopularGuds } from '../../components/common/popularGoods/PopularGoods'
 import './homepage.scss'
 
 const Homepage = () => {

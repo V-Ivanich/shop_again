@@ -1,5 +1,6 @@
 import { Slider } from '../slider/Slider'
 import PropTypes from 'prop-types'
+import './popularGoods.scss'
 
 const PopularGuds = ({ goods }) => {
   console.log(goods)

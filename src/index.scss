@@ -26,25 +26,31 @@
 }
 
 body[data-theme='dark'] {
+  --colors-buttons: #7a8499;
   --colors-text: #bacbcb;
   --colors-nav-base: #4a626e;
-  --colors-bg: hsl(219, 22%, 16%);
-  --colors-ui-base: hsla(208, 13%, 30%, 0.852);
+  --colors-bg: rgb(32, 38, 50);
+  --colors-ui-base: rgba(67, 77, 86, 0.851);
   --text-secondary: #dad6d6d6;
 
   --colors-hover: #e28b2e;
+  --colors-hover-btn:#b3b3b3;
+  --colors-bg-image:#96a1ab;;
   --colors-border: 1px solid #1a1d20;
   --shadow:6px 6px 20px rgba(254, 244, 244, 0.288);
   --shadow-text: rgba(181, 193, 194, 0.5) 2px 1px 2px;
 }
 body[data-theme='light'] {
+  --colors-buttons: #7fb4dae0;
   --colors-text: #3b3b3f;
   --text-secondary: #C4C4C4;
-  --colors-nav-base: #F0F0F4;
-  --colors-bg: rgba(131, 245, 215, 0.111);
-  --colors-ui-base: hsl(0, 0%, 100%);
+  --colors-nav-base: #d0cececb;
+  --colors-bg: #eeeeeedc;
+  --colors-ui-base: #fff;
 
   --colors-hover:#00665e;
+  --colors-hover-btn:#c6bee2e8;
+  --colors-bg-image:#dcdbdb;
   --colors-border: 1px solid #CDCDCD;
   --shadow:6px 6px 20px 0px #22202040;
   --shadow-text: rgba(79, 90, 91, 0.548) 2px 1px 2px;
