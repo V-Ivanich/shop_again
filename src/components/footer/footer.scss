@@ -1,6 +1,8 @@
 .footer__container {
-  width: 100vw;
-  background-color: var(--text-secondary);
+  width: 100%;
+  max-height: 232px;
+  margin-top: 6rem;
+  background-color: var(--colors-nav-base);
 
   .footer__content {
     height: 100px;

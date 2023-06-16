@@ -1,0 +1,49 @@
+.wrapper-baner {
+  display: flex;
+  margin-top: 3rem;
+  width: 100%;
+  justify-content: center;
+  background-color: var(--colors-buttons);
+  border-radius: var(--radii);
+
+  .sections-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box-img {
+      display: flex;
+      width: 160px;
+      height: 113px;
+      padding: 0.2rem;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .center-titles {
+    margin: 20px 26px 20px 32px;
+    color: #fff;
+    font-size: 2.25rem;
+  }
+
+  .big-button-veiw {
+    display: flex;
+    align-items: center;
+
+    .big-btn {
+      padding: 14px 41px;
+      background-color: #fff;
+      text-transform: uppercase;
+      font-size: 24px;
+
+      &:hover {
+        background-color: var(--colors-hover-btn);
+      }
+    }
+  }
+}

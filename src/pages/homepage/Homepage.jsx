@@ -6,6 +6,7 @@ import { Search } from '../../components/common/search/Search'
 import { Goods } from '../../testBasa/goods'
 import { PopularGuds } from '../../components/common/popularGoods/PopularGoods'
 import './homepage.scss'
+import { Baner } from '../../components/common/banerBlue/Baner'
 
 const Homepage = () => {
   const catalog = getCatalog.slice(0, 6)
@@ -25,6 +26,7 @@ const Homepage = () => {
       <div className='popular-goods'>
         <PopularGuds goods={Goods} />
       </div>
+      <Baner />
     </>
   )
 }
