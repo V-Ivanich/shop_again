@@ -27,7 +27,7 @@ Input.propTypes = {
 }
 
 Input.defaultProps = {
-  className: '',
+  className: 'base-style',
   label: '',
   error: '',
 }

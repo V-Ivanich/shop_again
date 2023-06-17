@@ -38,9 +38,9 @@ const PCnavBar = ({ onClick, theme, setVisible }) => {
           </Link>
         </div>
         <div className='div-4'>
-          {/* <Link to='/'> */}
-          <Logo className={theme == 'dark' ? 'icons' : ''} />
-          {/* </Link> */}
+          <Link to='/'>
+            <Logo className={theme == 'dark' ? 'icons' : ''} />
+          </Link>
         </div>
         <div className='div-5 navs-links'>
           <Link className='nav-links__location' to='/map'>
@@ -53,21 +53,21 @@ const PCnavBar = ({ onClick, theme, setVisible }) => {
         </div>
         <div className='div-6'>
           <div className='icons-box navs-links'>
-            <a href='#'>
+            <a href='/about'>
               <IoHeartOutline size='1.5rem' className='icons-size' />
             </a>
           </div>
 
           <div className='icons-box navs-links'>
-            <a href='#'>
+            <a href='/about'>
               <TbUser size='1.5rem' className='icons-size' />
             </a>
           </div>
 
           <div className='icons-box navs-links'>
-            <a href='#'>
+            <a href='/about'>
               <TbShoppingCart size='1.5rem' className='icons-size' />
-              <small className='count-product'>{/* {countBasket} */}0</small>
+              <small className='count-product'>{/* {countBasket} */}55</small>
             </a>
           </div>
         </div>

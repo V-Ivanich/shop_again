@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import './popularGoods.scss'
 
 const PopularGuds = ({ goods }) => {
-  console.log(goods)
   return (
     <>
       <div className='wrapper-goodspop'>

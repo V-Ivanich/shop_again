@@ -12,7 +12,7 @@ const Search = () => {
           <Button>Поиск по названию товара</Button>
         </div>
         <div className='input-sections'>
-          <Input className='base-style' type='text' />
+          <Input type='text' />
           <Button>Искать</Button>
         </div>
       </div>

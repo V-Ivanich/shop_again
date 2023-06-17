@@ -14,10 +14,10 @@
     /* typography */
   --family: 'Roboto', sans-serif;
   --fs-base: 1.2rem;
-  --weight-minibold: 400;
-  --weight-normal: 300;
-  --weight-normalbold: 500;
-  --weight-bold: 600;
+  --weight-minibold: 500;
+  --weight-normal: 400;
+  --weight-normalbold: 600;
+  --weight-bold: 700;
 
     /* border */
   --radii: .3rem;
@@ -47,7 +47,7 @@ body[data-theme='light'] {
   --colors-bg: #eeeeeedc;
   --colors-ui-base: #fff;
 
-  --colors-hover:#00665e;
+  --colors-hover:#ffffff;
   --colors-hover-btn:#c6bee2e8;
   --colors-bg-image:#dcdbdb;
   --colors-border: 1px solid #CDCDCD;
@@ -64,6 +64,12 @@ body {
   a {
     text-decoration: none;
     color: var(--colors-text);
+    transition: 0.2s ease-in;
+
+    &:hover {
+      color: var(--colors-hover);
+      transform: translateY(-2px);
+    }
   }
 
   ul {

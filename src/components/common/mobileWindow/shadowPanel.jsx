@@ -1,4 +1,7 @@
 import PropTypes from 'prop-types'
+import { TbUser, TbShoppingCart, TbHome, TbTruckDelivery } from 'react-icons/tb'
+import { IoHeartOutline } from 'react-icons/io5'
+import { MdOutlinePercent } from 'react-icons/md'
 import './shadowStyle.scss'
 
 const ShadowPanel = ({ visibleMobilePanel, setVisibleMobilePanel }) => {
@@ -15,11 +18,34 @@ const ShadowPanel = ({ visibleMobilePanel, setVisibleMobilePanel }) => {
             </button>
           </div>
           <ul>
-            <li>Войти</li>
-            <li>Регистрация</li>
-            <li>Магазины</li>
-            <li>Акции</li>
-            <li>Доставка/оплата</li>
+            <li>
+              <TbUser />
+              &nbsp; Войти
+            </li>
+            <li>
+              <TbUser />
+              &nbsp; Регистрация
+            </li>
+            <li>
+              <IoHeartOutline />
+              &nbsp; Избранное
+            </li>
+            <li>
+              <TbShoppingCart />
+              &nbsp; Корзина
+            </li>
+            <li>
+              <TbHome />
+              &nbsp; Магазины
+            </li>
+            <li>
+              <MdOutlinePercent />
+              &nbsp; Акции
+            </li>
+            <li>
+              <TbTruckDelivery />
+              &nbsp; Доставка/оплата
+            </li>
             <li>Квадроциклы</li>
             <li>Гидроциклы</li>
             <li>Катера</li>
