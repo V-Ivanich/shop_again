@@ -24,6 +24,11 @@
       position: absolute;
       top: 16px;
       right: 18px;
+      cursor: pointer;
+
+      &:hover {
+        color: coral;
+      }
     }
   }
 
@@ -76,12 +81,17 @@
       height: 40px;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
       transform: scaleX(-1);
 
       background-color: var(--colors-buttons);
       border-top-right-radius: 10px;
       border-bottom-left-radius: 4px;
       color: #fff;
+
+      &:hover {
+        background-color: var(--colors-hover-btn);
+      }
     }
   }
 }

@@ -1,40 +1,25 @@
 .footer__container {
-  width: 100%;
-  max-height: 232px;
-  margin-top: 6rem;
-  padding-top: 42px;
+  min-width: 100%;
+  padding-top: 1.62rem;
   background-color: var(--colors-nav-base);
 
   .footer__content {
-    display: flex;
-    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 5rem;
+    gap: 5px;
     align-items: center;
-    justify-content: space-between;
     font-size: 0.875rem;
     font-weight: var(--weight-normal);
 
-    p {
-      margin-bottom: 4px;
-      font-weight:var(--weight-bold) ;
-    }
-
-    li {
-      margin: 6px 0;
-    }
-
     .mailing-list {
       height: 100%;
+      max-width: 295px;
+      grid-column: 1/2;
       display: flex;
+      padding: 0.4rem 0;
       flex-direction: column;
-      gap: 1.7rem;
-      margin-right: 30px;
-
-      .mailing-list__title-block {
-
-        p {
-          margin-bottom: 0;
-        }
-      }
+      justify-content: space-between;
 
       .mailing-list__input-btn {
         display: flex;
@@ -46,22 +31,63 @@
       }
     }
 
-    .block-web {
+    .footer__content__center {
+      grid-column: 2/3;
       display: flex;
-      margin-right: 60px;
-      gap: 30px;
-      justify-content: start;
-    }
-  }
+      min-width: 242px;
+      max-width: 339px;
+      justify-self: center;
+      justify-content: space-between;
 
-  .sub-footer {
-    display: flex;
-    margin-top: 46px;
-    padding-bottom: 26px;
-    padding-left: 8rem;
-    gap: 7.5rem;
-    justify-content: center;
-    font-size: 0.62rem;
+      .block-info {
+        margin-right: 20px;
+      }
+
+      .block-shops {
+        margin-left: 25px;
+      }
+    }
+
+
+
+
+    .block-web {
+      grid-column: 3/4;
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    p {
+      margin-bottom: 4px;
+      font-weight:var(--weight-bold) ;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .sub-footer {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+    .sub-footer__left-content, .sub-footer__right-content {
+      font-size: 0.62rem;
+
+    //   .sub-footer__left-content {
+    //   justify-self: center;
+    //   align-self: self-end;
+    //   padding-right: 0.76rem;
+    // }
+    }
+
+    // .sub-footer__right-content {
+    //   grid-row: 2/3;
+    //   grid-column: 9/13;
+    //   justify-self: center;
+    //   align-self: self-end;
+    //   padding-right: 1rem;
+    // }
   }
 
 }

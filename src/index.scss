@@ -1,10 +1,12 @@
 
-// @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Big+Shoulders+Inline+Display:wght@200;300&family=Dosis:wght@300;400;500;600&display=swap');
-
 
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+html {
+  margin: 0 auto;
 }
 
 :root{
@@ -34,7 +36,7 @@ body[data-theme='dark'] {
 
   --colors-hover: #e28b2e;
   --colors-hover-btn:#b3b3b3;
-  --colors-bg-image:#96a1ab;;
+  --colors-bg-image:#96a1ab;
   --colors-border: 1px solid #1a1d20;
   --shadow:6px 6px 20px rgba(254, 244, 244, 0.288);
   --shadow-text: rgba(181, 193, 194, 0.5) 2px 1px 2px;
@@ -47,8 +49,8 @@ body[data-theme='light'] {
   --colors-bg: #eeeeeedc;
   --colors-ui-base: #fff;
 
-  --colors-hover:#ffffff;
-  --colors-hover-btn:#c6bee2e8;
+  --colors-hover:#626cae;
+  --colors-hover-btn:rgba(49, 199, 249, 0.709);
   --colors-bg-image:#dcdbdb;
   --colors-border: 1px solid #CDCDCD;
   --shadow:6px 6px 20px 0px #22202040;

@@ -1,0 +1,21 @@
+.wrapper-card-shops {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.5rem;
+
+  border: var(--colors-border);
+  border-radius: var(--radii);
+
+  .card-shops__maps {
+    width: 33.333%;
+    background-color: antiquewhite;
+    border: var(--colors-border);
+  }
+  .card-shops__body {
+    p {
+      padding-left: 4px;
+    }
+  }
+}

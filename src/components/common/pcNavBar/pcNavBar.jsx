@@ -54,19 +54,19 @@ const PCnavBar = ({ onClick, theme, setVisible }) => {
         <div className='div-6'>
           <div className='icons-box navs-links'>
             <a href='/about'>
-              <IoHeartOutline size='1.5rem' className='icons-size' />
+              <IoHeartOutline size='1.5rem' className='icons-items' />
             </a>
           </div>
 
           <div className='icons-box navs-links'>
             <a href='/about'>
-              <TbUser size='1.5rem' className='icons-size' />
+              <TbUser size='1.5rem' className='icons-items' />
             </a>
           </div>
 
           <div className='icons-box navs-links'>
             <a href='/about'>
-              <TbShoppingCart size='1.5rem' className='icons-size' />
+              <TbShoppingCart size='1.5rem' className='icons-items' />
               <small className='count-product'>{/* {countBasket} */}55</small>
             </a>
           </div>
