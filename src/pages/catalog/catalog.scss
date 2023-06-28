@@ -1,0 +1,30 @@
+.catalog-main {
+  width: 100%;
+  margin-top: 1.9rem;
+  margin-bottom: 1.9rem;
+
+  .catalog-title {
+    padding-left: 0.5rem;
+  }
+
+  .catalog-body {
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+
+    .catalog-filter-block {
+      width: 300px;
+      height: auto;
+      background-color: aquamarine;
+    }
+
+    .catalog-list-items {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+
+}

@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { BreadCrumbs } from '../../components/common/breadCrumbs/BreadCrumbs'
 import { HttpService } from '../../services/http.service'
 import { CardItem } from '../../templates/cardItem/CardItem'
+import { Container } from '../../templates/container/container'
 import './catalog.scss'
 
 const Catalog = () => {
@@ -21,23 +22,23 @@ const Catalog = () => {
       }
     }
     getData()
-  }, [])
+  }, [params])
 
-  console.log(dataCatalog)
   return (
     <>
       {dataCatalog.length ? (
-        <div>
+        <div className='catalog-main'>
           <BreadCrumbs currentTitle={dataCatalog[0].category} />
-          <div
-            style={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              justifyContent: 'center',
-            }}>
-            {dataCatalog.map((item) => (
-              <CardItem key={item.id} dataItem={item} />
-            ))}
+          <div className='catalog-title'>
+            <h2>{dataCatalog[0].category}</h2>
+          </div>
+          <div className='catalog-body'>
+            <div className='catalog-filter-block'>Filter Block</div>
+            <div className='catalog-list-items'>
+              {dataCatalog.map((item) => (
+                <CardItem key={item.id} dataItem={item} />
+              ))}
+            </div>
           </div>
         </div>
       ) : (
