@@ -15,15 +15,16 @@
     .catalog-filter-block {
       width: 300px;
       height: auto;
-      background-color: aquamarine;
+      margin-right: 0.8rem;
     }
 
     .catalog-list-items {
+      max-width: 870px;
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 1rem;
+      gap: 0.8rem;
     }
   }
 

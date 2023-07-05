@@ -59,9 +59,9 @@ const PCnavBar = ({ onClick, theme, setVisible }) => {
           </div>
 
           <div className='icons-box navs-links'>
-            <a href='/about'>
+            <Link to='/users'>
               <TbUser size='1.5rem' className='icons-items' />
-            </a>
+            </Link>
           </div>
 
           <div className='icons-box navs-links'>

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { BreadCrumbs } from '../../components/common/breadCrumbs/BreadCrumbs'
 import { HttpService } from '../../services/http.service'
 import { CardItem } from '../../templates/cardItem/CardItem'
-import { Container } from '../../templates/container/container'
+import CustomizedAccordions from '../../components/common/accordion/Accordion'
 import './catalog.scss'
 
 const Catalog = () => {
@@ -33,7 +33,9 @@ const Catalog = () => {
             <h2>{dataCatalog[0].category}</h2>
           </div>
           <div className='catalog-body'>
-            <div className='catalog-filter-block'>Filter Block</div>
+            <div className='catalog-filter-block'>
+              <CustomizedAccordions />
+            </div>
             <div className='catalog-list-items'>
               {dataCatalog.map((item) => (
                 <CardItem key={item.id} dataItem={item} />

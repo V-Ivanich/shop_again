@@ -1,0 +1,18 @@
+
+form {
+  width: 100%;
+
+  .input-password, .input-email {
+    height: 102px;
+  }
+
+  .alert-text {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+    border: 1px solid salmon;
+    background: transparent;
+  }
+
+}
+
