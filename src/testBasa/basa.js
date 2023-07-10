@@ -1,45 +1,38 @@
-import kvadro from '../image/kvadrocikl.png'
-import gidrocikl from '../image/gidrocikl.png'
-import katera from '../image/katera.png'
-import snego from '../image/snego.png'
-import vezdehod from '../image/vezdehod.png'
-import drive from '../image/drive.png'
-
 export const getCatalog = [
   {
     id: 'cat1',
     name: 'Квадроциклы',
-    image: kvadro,
+    images: 'kvadrocikl.png',
     links: 'quadro',
   },
   {
     id: 'cat2',
     name: 'Гидроциклы',
-    image: gidrocikl,
+    images: 'gidrocikl.png',
     links: 'gidrotsikly',
   },
   {
     id: 'cat3',
     name: 'Катера',
-    image: katera,
+    images: 'katera.png',
     links: 'launch',
   },
   {
     id: 'cat4',
     name: 'Снегоходы',
-    image: snego,
+    images: 'snego.png',
     links: 'snowmobiles',
   },
   {
     id: 'cat5',
     name: 'Вездеходы',
-    image: vezdehod,
+    images: 'vezdehod.png',
     links: 'atvs',
   },
   {
     id: 'cat6',
     name: 'Двигатели',
-    image: drive,
+    images: 'drive.png',
     links: 'engines',
   },
   {

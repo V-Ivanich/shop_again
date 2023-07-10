@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import Stack from '@mui/material/Stack'
 import './breadcrumbs.scss'
 
-const BreadcrumbsLinks = ({ catalog }) => {
+const BreadcrumbsLinks = ({ catalog, model }) => {
   const navigate = useNavigate()
   const handleClick = () => {
     navigate(-1)
@@ -22,7 +22,7 @@ const BreadcrumbsLinks = ({ catalog }) => {
       {catalog}
     </Link>,
     <Typography key='3' color='text.primary' className='bread'>
-      Breadcrumb
+      {model}
     </Typography>,
   ]
 

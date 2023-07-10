@@ -37,6 +37,7 @@ body[data-theme='dark'] {
   --colors-hover: #e28b2e;
   --colors-hover-btn:#b3b3b3;
   --colors-bg-image:#96a1ab;
+  --radial-gradient:radial-gradient(ellipse 250px 160px, #4291a98d, #202632 );
   --colors-border: 1px solid #1a1d20;
   --shadow:6px 6px 20px rgba(254, 244, 244, 0.288);
   --shadow-text: rgba(181, 193, 194, 0.5) 2px 1px 2px;
@@ -52,6 +53,7 @@ body[data-theme='light'] {
   --colors-hover:#626cae;
   --colors-hover-btn:rgba(49, 199, 249, 0.709);
   --colors-bg-image:#dcdbdb;
+  --radial-gradient:radial-gradient(ellipse 250px 160px, #4291a98d, #eeeeeedc );
   --colors-border: 1px solid #CDCDCD;
   --shadow:6px 6px 20px 0px #22202040;
   --shadow-text: rgba(79, 90, 91, 0.548) 2px 1px 2px;

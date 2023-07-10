@@ -7,6 +7,7 @@ import 'swiper/scss/navigation'
 import './slider.scss'
 
 const Slider = ({ propsItems }) => {
+  console.log(propsItems)
   return (
     <>
       <div className='slider-card'>

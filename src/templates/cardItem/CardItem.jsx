@@ -6,6 +6,8 @@ import './cardItem.scss'
 
 const CardItem = ({ dataItem }) => {
   const navigate = useNavigate()
+  const patchImage = `/src/image/${dataItem.images}`
+  console.log(patchImage)
 
   const handleClickCard = () => {
     navigate(dataItem.id)
@@ -17,7 +19,7 @@ const CardItem = ({ dataItem }) => {
         <IoHeartOutline size='24' className='likes' />
       </div>
       <div className='image-block' onClick={handleClickCard}>
-        <img src={dataItem.images} alt='no photo' />
+        <img src={patchImage} alt='no photo' />
       </div>
       <div className='title-block'>
         {dataItem.name}
