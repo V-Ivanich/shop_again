@@ -10,7 +10,7 @@ const CardCategory = ({ itemCategories }) => {
     <div className='wrapper-category'>
       <div className='left-content'>
         <strong className='title-category'>{itemCategories.name}</strong>
-        <Link to='#' className='link-to'>
+        <Link to={itemCategories.links} className='link-to'>
           Подробнее &gt;
         </Link>
       </div>
