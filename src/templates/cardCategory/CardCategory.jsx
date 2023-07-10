@@ -5,7 +5,7 @@ import './cardCategory.scss'
 
 const CardCategory = ({ itemCategories }) => {
   console.log(itemCategories)
-  const urlImage = `../../image/${itemCategories.images}`
+  const urlImage = `/src/image/${itemCategories.images}`
   return (
     <div className='wrapper-category'>
       <div className='left-content'>

@@ -1,20 +1,11 @@
-import gidrokos from '../image/gidrokos.png'
-import mafon from '../image/mafon.png'
-import verovka from '../image/verovka.png'
-import binokl from '../image/binokl.png'
-import jilet from '../image/jilet.png'
-import rukzak from '../image/rukzak.png'
-import drive from '../image/motor.png'
-
 export const Goods = [
   {
     id: '1',
     name: 'Мужской костюм 3мм',
     price: 7000,
     likes: false,
-    promotion: { sale: 0, new: false, hit: false, diler: 0 },
     basket: false,
-    images: gidrokos,
+    images: 'gidrokos.png',
     description: '6477311dj',
     comments: '12d7gb8k',
   },
@@ -23,9 +14,8 @@ export const Goods = [
     name: 'BRP Audio-портативная система',
     price: 0,
     likes: false,
-    promotion: { sale: 0, new: false, hit: false, diler: 0 },
     basket: false,
-    images: mafon,
+    images: 'mafon.png',
     description: '6477311dj',
     comments: '12d7gb8k',
   },
@@ -34,9 +24,8 @@ export const Goods = [
     name: 'Спасательное снаряжение',
     price: 0,
     likes: false,
-    promotion: { sale: 0, new: false, hit: false, diler: 0 },
     basket: false,
-    images: verovka,
+    images: 'verovka.png',
     description: '6477311dj',
     comments: '12d7gb8k',
   },
@@ -45,9 +34,8 @@ export const Goods = [
     name: 'BRP Audio-Premium System',
     price: 68000,
     likes: false,
-    promotion: { sale: 0, new: false, hit: false, diler: 0 },
     basket: false,
-    images: binokl,
+    images: 'binokl.png',
     description: '6477311dj',
     comments: '12d7gb8k',
   },
@@ -56,9 +44,8 @@ export const Goods = [
     name: "Спасательный жилет BRP Men's Airflow PFD",
     price: 6900,
     likes: false,
-    promotion: { sale: 0, new: false, hit: false, diler: 0 },
     basket: false,
-    images: jilet,
+    images: 'jilet.png',
     description: '6477311dj',
     comments: '12d7gb8k',
   },
@@ -67,9 +54,8 @@ export const Goods = [
     name: 'Водонепроницаемый Рюкзак',
     price: 9800,
     likes: false,
-    promotion: { sale: 0, new: false, hit: false, diler: 0 },
     basket: false,
-    images: rukzak,
+    images: 'rukzak.png',
   },
   {
     id: '7',
@@ -77,9 +63,8 @@ export const Goods = [
     brand: 'Suzuki DF9.9BRS',
     price: 225000,
     likes: false,
-    promotion: { sale: 15.6, new: false, hit: false, diler: 0 },
     basket: false,
-    images: drive,
+    images: 'motor.png',
     description: '6477311dj',
     comments: '12d7gb8k',
   },
@@ -88,9 +73,8 @@ export const Goods = [
     name: 'Спасательное снаряжение-2',
     price: 100,
     likes: false,
-    promotion: { sale: 10, new: false, hit: false, diler: 0 },
     basket: false,
-    images: verovka,
+    images: 'verovka.png',
     description: '6477311dj',
     comments: '12d7gb8k',
   },
