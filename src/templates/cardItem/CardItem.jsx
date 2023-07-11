@@ -7,8 +7,6 @@ import './cardItem.scss'
 const CardItem = ({ dataItem }) => {
   const navigate = useNavigate()
   const patchImage = `/src/image/${dataItem.images}`
-  console.log(dataItem)
-  console.log(patchImage)
 
   const handleClickCard = () => {
     navigate(dataItem.id)

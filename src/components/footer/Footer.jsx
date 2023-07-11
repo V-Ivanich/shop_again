@@ -1,7 +1,10 @@
+import * as React from 'react'
 import { Link } from 'react-router-dom'
 import { Container } from '../../templates/container/container'
-import { Button } from '../../templates/buttons/Button'
-import { Input } from '../../templates/inputs/Input'
+import Button from '@mui/material/Button'
+import TextField from '@mui/material/TextField'
+import SendIcon from '@mui/icons-material/Send'
+// import { Input } from '../../templates/inputs/Input'
 import { FaInstagram, FaFacebook, FaYoutube, FaVk } from 'react-icons/fa'
 import './footer.scss'
 
@@ -17,8 +20,26 @@ const Footer = () => {
                 <p>и узнавайте о акция быстрее</p>
               </div>
               <div className='mailing-list__input-btn'>
-                <Input type='email' placeholder='Введите ваш e-mail:' />
-                <Button className='btn-submit'>ОТПРАВИТЬ</Button>
+                {/* <Input type='email' placeholder='Введите ваш e-mail:' /> */}
+                <TextField
+                  fullWidth
+                  id='outlined-basic'
+                  label='Введите e-mail:'
+                  variant='outlined'
+                  size='small'
+                  color='success'
+                />
+                <Button
+                  variant='outlined'
+                  size='small'
+                  endIcon={<SendIcon />}
+                  sx={{
+                    padding: '0px 2rem',
+                    color: 'var(--colors-buttons)',
+                    border: '1px solid var(--colors-buttons)',
+                  }}>
+                  ОТПРАВИТЬ
+                </Button>
               </div>
             </div>
             <div className='footer__content__center'>

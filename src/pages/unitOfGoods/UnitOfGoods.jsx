@@ -3,7 +3,9 @@ import { BreadcrumbsLinks } from '../../components/common/breadcrumbs/BreadCrumb
 import { useGetGoodsQuery } from '../../redux/goodsApi'
 import { GoodsInfo } from '../../components/common/goodsInfo/GoodsInfo'
 import { Button } from '@mui/material'
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import './unitOfGoods.scss'
+import { BasicRating } from '../../components/common/rating/Rating'
 
 const UnitOfGoods = () => {
   const { id, catalog } = useParams()
@@ -32,8 +34,13 @@ const UnitOfGoods = () => {
             </div>
             <div className='price-line'>{goodsItem.price} &#8381;</div>
           </div>
-          <div className='goodsItem-image__contents'>
-            <h1 style={{ marginBottom: '2rem' }}>{goodsItem.brand}</h1>
+          <div className='goodsItem-contents'>
+            <h1>{goodsItem.brand}</h1>
+
+            <div className='goodsItem-contents__rating'>
+              <FavoriteBorderIcon sx={{ marginRight: '2rem' }} />
+              <BasicRating />
+            </div>
             <GoodsInfo propertyList={goodsItem} />
             <Button sx={{ mt: 4 }} variant='outlined'>
               КУПИТЬ
