@@ -38,7 +38,10 @@ const UnitOfGoods = () => {
             <h1>{goodsItem.brand}</h1>
 
             <div className='goodsItem-contents__rating'>
-              <FavoriteBorderIcon sx={{ marginRight: '2rem' }} />
+              <FavoriteBorderIcon
+                sx={{ marginRight: '2rem' }}
+                className='favorite'
+              />
               <BasicRating />
             </div>
             <GoodsInfo propertyList={goodsItem} />

@@ -5,6 +5,7 @@ import { Aboutpage } from './pages/Aboutpage'
 import { Catalog } from './pages/catalog/Catalog'
 import { Shops } from './pages/shops/Shops'
 import { UnitOfGoods } from './pages/unitOfGoods/UnitOfGoods'
+import { Basket } from './pages/basket/Basket'
 import { LogIn } from './pages/users/LogIn'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<Homepage />} />
           <Route path='about' element={<Aboutpage />} />
           <Route path='users' element={<LogIn />} />
+          <Route path='basket' element={<Basket />} />
           <Route path=':catalog' element={<Catalog />} />
           <Route path=':catalog/:id' element={<UnitOfGoods />} />
           <Route path='shops' element={<Shops />} />

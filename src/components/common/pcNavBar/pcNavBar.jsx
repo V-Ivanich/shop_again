@@ -65,10 +65,10 @@ const PCnavBar = ({ onClick, theme, setVisible }) => {
           </div>
 
           <div className='icons-box navs-links'>
-            <a href='/about'>
+            <Link to='/basket'>
               <TbShoppingCart size='1.5rem' className='icons-items' />
               <small className='count-product'>{/* {countBasket} */}55</small>
-            </a>
+            </Link>
           </div>
         </div>
         <div className='div-7 navs-links' onClick={onClick}>

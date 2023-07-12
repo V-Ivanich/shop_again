@@ -48,6 +48,15 @@
           margin: 1.2rem 0;
           align-items: center;
           }
+
+        .favorite {
+          cursor: pointer;
+          color: inherit;
+
+          &:hover {
+            color: coral;
+          }
+        }
       }
 
   }
